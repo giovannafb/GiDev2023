@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class AnimatedState : IBaseState
 {
-    private SnakeMoveControl _snakeMoveControl;
-    
     public void EnterState(AnimationStateMachine stateMachine)
     {
         Debug.Log("deu certo");
-        stateMachine._anim.SetBool("Eat", true);   
+        
+        stateMachine._anim.SetBool("Eat", true); 
     }
 
     public void UpdateState(AnimationStateMachine stateMachine)
     {
-        if(_snakeMoveControl._eat == 1)
+        if(GameManager.Instance._eat == 0)
         {   
-            //_currentTime = _time;
-            stateMachine.SwitchState(new AnimatedState());
+            stateMachine.SwitchState(new IdleState());
         }
     }
 }

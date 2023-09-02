@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 269858982}
   - component: {fileID: 269858981}
   m_Layer: 0
-  m_Name: Apple sprite
+  m_Name: Apple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,6 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1010128721}
   - component: {fileID: 1010128722}
+  - component: {fileID: 1010128723}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -459,6 +460,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1010128723
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010128720}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f1043aafd33cdb4a8fb78450bd1c078, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1242935622
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,11 +490,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1242935623}
-  - component: {fileID: 1242935624}
   - component: {fileID: 1242935625}
+  - component: {fileID: 1242935624}
   - component: {fileID: 1242935626}
-  - component: {fileID: 1242935628}
   - component: {fileID: 1242935627}
+  - component: {fileID: 1242935628}
   m_Layer: 0
   m_Name: Snake
   m_TagString: Untagged
@@ -510,7 +532,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1926777d464226741a4aa1921782b59c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eat: 0
   _speed: 10
 --- !u!50 &1242935625
 Rigidbody2D:
@@ -786,3 +807,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1899517858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1899517860}
+  - component: {fileID: 1899517859}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1899517859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899517858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653851ebf8515394a9f5898b9e55564b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eat: 0
+--- !u!4 &1899517860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899517858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.522436, y: -1.6613575, z: 0.13172895}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
