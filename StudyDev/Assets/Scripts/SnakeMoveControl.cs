@@ -7,10 +7,9 @@ using UnityEngine.Scripting.APIUpdating;
 
 public class SnakeMoveControl : MonoBehaviour
 {
-    //Tentei passar o _eat como referencia mas a Unity diz que não está referenciado, tentei vários métodos
+    
     public SnakeMoves _snakeMoves;
     private Rigidbody2D _rb;
-    //public float _eat;
     [SerializeField] private float _speed = 10f;
 
    void Awake()
@@ -41,8 +40,4 @@ public class SnakeMoveControl : MonoBehaviour
         _rb.velocity = new Vector3(ctx.ReadValue<Vector2>().x, ctx.ReadValue<Vector2>().y) * _speed;
     }
 
-    /*    void Eat(InputAction.CallbackContext ctx)
-    {
-        _eat = ctx.ReadValue<float>();
-    }*/
 }
