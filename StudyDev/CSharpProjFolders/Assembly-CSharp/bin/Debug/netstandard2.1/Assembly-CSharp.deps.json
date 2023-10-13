@@ -10,7 +10,9 @@
       "Assembly-CSharp/1.0.0": {
         "dependencies": {
           "Microsoft.Unity.Analyzers": "1.17.0",
+          "Cinemachine": "0.0.0.0",
           "com.tsk.vscode.Editor": "0.0.0.0",
+          "com.unity.cinemachine.editor": "0.0.0.0",
           "PsdPlugin": "0.0.0.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.0.0",
           "Unity.2D.Animation.Editor": "0.0.0.0",
@@ -152,9 +154,25 @@
         }
       },
       "Microsoft.Unity.Analyzers/1.17.0": {},
+      "Cinemachine/0.0.0.0": {
+        "runtime": {
+          "Cinemachine.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "com.tsk.vscode.Editor/0.0.0.0": {
         "runtime": {
           "com.tsk.vscode.Editor.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "com.unity.cinemachine.editor/0.0.0.0": {
+        "runtime": {
+          "com.unity.cinemachine.editor.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
           }
@@ -1287,7 +1305,17 @@
       "path": "microsoft.unity.analyzers/1.17.0",
       "hashPath": "microsoft.unity.analyzers.1.17.0.nupkg.sha512"
     },
+    "Cinemachine/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "com.tsk.vscode.Editor/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "com.unity.cinemachine.editor/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
